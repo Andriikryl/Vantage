@@ -1,0 +1,36 @@
+.header{
+    .header__box{
+        padding-block: 17px;
+        position: relative;
+        .header__box-logo{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            .header__logo{
+                display: inline-block;
+                padding: 43px 68px;
+                background-color: hsla(45, 43%, 42%, 1);
+            }
+        }
+        .header__nav{
+            display: flex;
+            justify-content: flex-end;
+            .header__list{
+                display: flex;
+                align-items: center;
+                gap: 37px;
+                .header__link{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 34px;
+                    letter-spacing: 2.7625px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  width: min(1312px, 100% - 1rem);
+  margin-inline: auto;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 8%);
+}
+
+/* SHADOW*/
+.blog-shadow {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.blog-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* SHADOW*/
+.expertise__btn {
+  padding: 25px 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.expertise__btn-style {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: hsl(45deg, 43%, 42%);
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.expertise__btn-style-black {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: hsl(0deg, 0%, 8%);
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header .header__box {
+  padding-block: 17px;
+  position: relative;
+}
+.header .header__box .header__box-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+.header .header__box .header__box-logo .header__logo {
+  display: inline-block;
+  padding: 43px 68px;
+  background-color: hsl(45deg, 43%, 42%);
+}
+.header .header__box .header__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .header__box .header__nav .header__list {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+.header .header__box .header__nav .header__list .header__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 34px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.expertise .expertise__box {
+  position: relative;
+}
+.expertise .expertise__box .expertise__style {
+  background-color: hsl(0deg, 0%, 92%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.expertise .expertise__box .expertise__style::after {
+  content: "";
+  display: inline-block;
+  inline-size: 483px;
+  block-size: 329px;
+  background-color: hsl(45deg, 43%, 42%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.expertise .expertise__box .expertise__style .expertise__links {
+  padding-block: 14px;
+  display: flex;
+  gap: 36px;
+}
+.expertise .expertise__box .expertise__style .expertise__links .expertise__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 68px;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.expertise .expertise__box .expertise__info {
+  position: absolute;
+  right: 65px;
+  top: 100px;
+  max-width: 584px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 67px;
+}
+.expertise .expertise__box .expertise__info .expertise__titel {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #99823D;
+  -webkit-padding-after: 5px;
+          padding-block-end: 5px;
+}
+.expertise .expertise__box .expertise__info .expertise__text-main {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 67px;
+  line-height: 67px;
+  text-transform: capitalize;
+  color: #141414;
+  -webkit-padding-after: 32px;
+          padding-block-end: 32px;
+}
+.expertise .expertise__box .expertise__info .expertise__text-second {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #141414;
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
+}
+.expertise .expertise__box .expertise__info .expertise__box-btn {
+  display: flex;
+  gap: 17px;
+}/*# sourceMappingURL=style.css.map */
