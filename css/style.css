@@ -250,4 +250,74 @@ body {
 .expertise .expertise__box .expertise__info .expertise__box-btn {
   display: flex;
   gap: 17px;
+}
+
+.about {
+  background-color: hsl(0deg, 0%, 92%);
+  -webkit-padding-before: 140px;
+          padding-block-start: 140px;
+  -webkit-padding-after: 100px;
+          padding-block-end: 100px;
+}
+.about .about__box {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+.about .about__box .box__info {
+  max-width: 688px;
+}
+.about .about__box .box__info .about__titel {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #99823D;
+  -webkit-padding-after: 5px;
+          padding-block-end: 5px;
+}
+.about .about__box .box__info .about__text-titel {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 53px;
+  text-transform: capitalize;
+  color: #141414;
+}
+.about .about__box .box__info .box__info-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #141414;
+}
+.about .about__box .articl__box {
+  -webkit-padding-after: 50px;
+          padding-block-end: 50px;
+}
+.about .about__box .articl__box .articl__date {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #99823D;
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
+}
+.about .about__box .articl__box .articl__text {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #141414;
 }/*# sourceMappingURL=style.css.map */
