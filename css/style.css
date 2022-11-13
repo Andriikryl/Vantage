@@ -320,4 +320,83 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   color: #141414;
+}
+
+.slide {
+  background-color: hsl(0deg, 0%, 92%);
+  -webkit-padding-after: 100px;
+          padding-block-end: 100px;
+}
+.slide .card {
+  max-width: 412px;
+  position: relative;
+}
+.slide .card .img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide .card .img img {
+  inline-size: 100%;
+  block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slide .card h2 {
+  padding: 20px 92px;
+  background-color: hsl(0deg, 0%, 0%);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 35;
+}
+.slide .card h2 a {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.slide .card p {
+  padding: 0px 41px 78px 44px;
+  background-color: hsl(45deg, 43%, 42%);
+  position: absolute;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 34px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  bottom: 0px;
+  right: 0;
+  z-index: 30;
+}
+.slide .card small {
+  padding: 9px 36px;
+  background-color: hsl(0deg, 0%, 8%);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 2.72px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide__list {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
