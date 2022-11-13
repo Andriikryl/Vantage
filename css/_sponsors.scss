@@ -1,0 +1,48 @@
+.sponsors{
+    padding-block-end: 100px;
+    background-color: #ffff;
+}  
+  .sponsors__box {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(
+      ( to right),
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 20%,
+      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 0)
+    );
+  }
+  
+  .sponsors__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    min-width: 100%;
+    animation: scroll-x 30s linear infinite;
+    margin-inline-end: 20px;
+  }
+  
+  @keyframes scroll-x {
+    from {
+      transform: translateX (0);
+    }
+    to {
+      transform: translateX(calc(-100% - 21px));
+    }
+  }
+  
+  @keyframes scroll-y {
+    from {
+      transform: translateY (0);
+    }
+    to {
+      transform: translateY (calc(-100% - 21px)) ;
+    }
+  }
+  
+  
+

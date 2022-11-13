@@ -1,0 +1,76 @@
+.architecture{
+    background-color: #FFFFFF;
+    padding-block-start: 100px;
+    .architecture__titel{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 2.7625px;
+        text-transform: uppercase;
+        color: #99823D;        
+        padding-block-end: 10px;
+    }
+    .architecture__text{
+        font-family: 'Teko';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 53px;
+        line-height: 53px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #141414;
+        padding-block-end: 80px;
+    }
+}
+.architecture__box{
+    $sizing:auto-fit;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat($sizing, minmax(380px, 1fr));
+    padding-block-end: 90px;
+}
+
+
+.architecture__card{
+    max-width: 391px;
+    padding: 33px 65px 31px 34px;
+    .card__box{
+        display: flex;
+        gap: 17px;
+        align-items: center;
+        padding-block-end: 17px;
+        .card__info{
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 17px;
+                letter-spacing: 2.7625px;
+                text-transform: uppercase;
+                color: #99823D;                
+            }
+            h5{
+                font-family: 'Teko';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #141414;                
+            }
+    }
+    }
+    .card__text{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: #141414;
+    }
+}
+
