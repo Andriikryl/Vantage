@@ -47,3 +47,23 @@ function drawLine(){
 }
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+const textEls = document.querySelectorAll('[wb-data="text"]');
+
+textEls.forEach((textEl) => {
+    const splitType = new SplitType(textEl, { types: "chars"});
+    gsap.set(textEl, {autoAlpha: 1});
+    gsap.from(splitType.chars, {
+        autoAlpha: 0,
+        scale: 10,
+        stagger: 0.1,
+        ease: "expo.out",
+        scrollTrigger: {
+            trigger: textEl,
+            start: `bottom 100%`
+        },
+        // repeat: -1,
+        // repeatDelay: 0.5
+    });
+});
